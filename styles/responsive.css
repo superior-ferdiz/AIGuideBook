@@ -1,0 +1,92 @@
+/* =====================================================
+   AIGuidebook — responsive.css
+   Breakpoints: 768px (tablet), 480px (mobil)
+   ===================================================== */
+
+/* ---- TABLET (≤ 1024px) ---- */
+@media (max-width: 1024px) {
+  .grid-3, .topic-cards { grid-template-columns: repeat(2, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .footer-brand { grid-column: 1 / -1; }
+}
+
+/* ---- TABLET SMALL (≤ 768px) ---- */
+@media (max-width: 768px) {
+
+  /* Nav */
+  .nav-toggle { display: flex; }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: var(--nav-h);
+    left: 0; right: 0;
+    background: var(--secondary);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: .25rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,.3);
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { width: 100%; padding: .7rem 1rem; }
+  .navbar { position: sticky; }
+
+  /* Sections */
+  .section { padding: 3rem 0; }
+
+  /* Grids */
+  .grid-3, .topic-cards, .grid-2 { grid-template-columns: 1fr; }
+
+  /* Hero */
+  .hero { padding: 3.5rem 0 3rem; }
+  .hero h1 { font-size: 2rem; }
+  .hero p { font-size: 1rem; }
+  .hero-actions { flex-direction: column; align-items: center; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+
+  /* Rule boxes side by side → stack */
+  .rules-grid { grid-template-columns: 1fr !important; }
+
+  /* CTA */
+  .cta-actions { flex-direction: column; align-items: center; }
+
+  /* Stats */
+  .stats-row { justify-content: center; }
+}
+
+/* ---- MOBIL (≤ 480px) ---- */
+@media (max-width: 480px) {
+  :root { --nav-h: 60px; }
+
+  body { font-size: .95rem; }
+
+  .container { padding: 0 1rem; }
+
+  h1 { font-size: 1.7rem; }
+  h2 { font-size: 1.35rem; }
+
+  .btn { padding: .65rem 1.2rem; font-size: .9rem; }
+
+  .card { padding: 1.35rem; }
+  .page-header { padding: 2.5rem 0 2rem; }
+
+  .faq-list summary { font-size: .92rem; padding: 1rem; }
+  .faq-answer { padding: 0 1rem 1rem; }
+
+  .checklist-item { padding: .9rem 1rem; }
+
+  .resource-card { flex-direction: column; gap: .75rem; }
+
+  .section { padding: 2.5rem 0; }
+}
+
+/* ---- PRINT ---- */
+@media print {
+  .navbar, .hero-actions, .cta-banner, .footer, .btn, .nav-toggle { display: none !important; }
+  body { background: #fff; color: #000; }
+  a { color: #000; text-decoration: underline; }
+  .card, .rule-box, .resource-card { box-shadow: none; border: 1px solid #ccc; }
+}

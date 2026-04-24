@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ressurser – AIGuidebook</title>
+  <meta name="description" content="Lenker til offisielle retningslinjer og ressurser om KI-etikk fra Datatilsynet, EU, NIST og norske universiteter.">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/responsive.css">
+  <style>
+    .resource-grid { display: grid; gap: 1.1rem; }
+    .resource-category { margin-bottom: 2.5rem; }
+    .resource-category h3 { margin-bottom: 1rem; display: flex; align-items: center; gap: .5rem; font-size: 1.15rem; }
+  </style>
+</head>
+<body>
+  <!--<a href="#main-content" class="skip-link">Hopp til innhold</a> -->
+
+  <nav class="navbar" aria-label="Hovednavigasjon">
+    <div class="container">
+      <a href="../index.html" class="nav-logo" aria-label="AIGuidebook – til forsiden">
+        <span class="logo-icon" aria-hidden="true">📚</span> AIGuidebook
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Åpne meny" aria-controls="nav-menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <!-- <li><a href="../index.html">Hjem</a></li> -->
+        <li><a href="guidelines.html">Veiledning</a></li>
+        <li><a href="examples.html">Eksempler</a></li>
+        <li><a href="faq.html">FAQ &amp; Sjekkliste</a></li>
+        <li><a href="resources.html" class="active" aria-current="page">Ressurser</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <header class="page-header">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Navigasjonssti">
+          <a href="../index.html">Hjem</a>
+          <span aria-hidden="true">›</span>
+          <span aria-current="page">Ressurser</span>
+        </nav>
+        <h1>Ressurser og offisielle retningslinjer</h1>
+        <p>Lenker til pålitelige og offisielle kilder om KI-etikk, personvern og akademisk integritet.</p>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="resources-heading">
+      <div class="container" style="max-width:900px;">
+
+        <div class="alert alert--info" style="margin-bottom:2.5rem;">
+          <span class="alert-icon" aria-hidden="true">ℹ️</span>
+          <div>Alle lenker åpnes i ny fane. AIGuidebook er ikke ansvarlig for innholdet på eksterne nettsteder. Sist verifisert: april 2026.</div>
+        </div>
+
+        <!-- NORSKE RESSURSER -->
+        <div class="resource-category">
+          <h3 id="resources-heading"><span aria-hidden="true">🇳🇴</span> Norske ressurser</h3>
+          <div class="resource-grid">
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🏛️</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">Datatilsynet – Kunstig intelligens</h3>
+                  <span class="resource-badge badge--no">Norsk</span>
+                </div>
+                <p>Norges datatilsyns offisielle ressurser om KI og personvern, inkludert veiledere om GDPR-samsvar for KI-løsninger.</p>
+                <a href="https://www.datatilsynet.no/regelverk-og-verktoy/rapporter-og-utredninger/kunstig-intelligens/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Besøk Datatilsynets KI-ressurser (åpner i ny fane)">
+                  Besøk nettsiden ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🎓</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">Kunnskapsdepartementet – KI i utdanning</h3>
+                  <span class="resource-badge badge--no">Norsk</span>
+                </div>
+                <p>Regjeringens strategi og retningslinjer for ansvarlig bruk av kunstig intelligens i norsk utdanning.</p>
+                <a href="https://www.regjeringen.no/no/dokumenter/nasjonal-strategi-for-kunstig-intelligens/id2685594/?ch=7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Besøk Kunnskapsdepartementets sider (åpner i ny fane)">
+                  Besøk nettsiden ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🔬</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">Norges forskningsråd – Ansvarlig KI</h3>
+                  <span class="resource-badge badge--no">Norsk</span>
+                </div>
+                <p>Ressurser og rapporter om ansvarlig utvikling og bruk av KI i norsk forskning og næringsliv.</p>
+                <a href="https://www.forskningsradet.no/forskningspolitikk-strategi/ltp/kunstig-intelligens/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Besøk Norges forskningsråd (åpner i ny fane)">
+                  Besøk nettsiden ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- EUROPEISKE RESSURSER -->
+        <div class="resource-category">
+          <h3><span aria-hidden="true">🇪🇺</span> Europeiske ressurser</h3>
+          <div class="resource-grid">
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">⚖️</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">EU AI Act – Europakommisjonens KI-forordning</h3>
+                  <span class="resource-badge badge--int">EU</span>
+                </div>
+                <p>EUs nye regulering av kunstig intelligens. Forordningen klassifiserer KI-systemer etter risikonivå og setter krav til åpenhet og ansvarlighet.</p>
+                <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les om EU AI Act (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">📋</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">EU – Etiske retningslinjer for pålitelig KI</h3>
+                  <span class="resource-badge badge--int">EU</span>
+                </div>
+                <p>Europakommisjonens syv nøkkelkrav til pålitelig KI: menneskelig oversikt, teknisk robusthet, personvern, åpenhet, mangfold, samfunnsnytte og ansvarlighet.</p>
+                <a href="https://digital-strategy.ec.europa.eu/en/library/ethics-guidelines-trustworthy-ai" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les EUs KI-etikk-retningslinjer (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- INTERNASJONALE RESSURSER -->
+        <div class="resource-category">
+          <h3><span aria-hidden="true">🌍</span> Internasjonale ressurser</h3>
+          <div class="resource-grid">
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🏗️</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">NIST AI Risk Management Framework</h3>
+                  <span class="resource-badge badge--int">Int.</span>
+                </div>
+                <p>USAs nasjonale standardiseringsinstitutt NIST sitt rammeverk for å identifisere, vurdere og håndtere risikoer ved KI-systemer.</p>
+                <a href="https://www.nist.gov/itl/ai-risk-management-framework" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les NIST AI RMF (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🌐</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">UNESCO – Anbefaling om etikk for KI</h3>
+                  <span class="resource-badge badge--int">Int.</span>
+                </div>
+                <p>UNESCOs globale rammeverk for etisk KI-utvikling og -bruk, ratifisert av 193 land i 2021. Dekker menneskeverd, åpenhet og bærekraft.</p>
+                <a href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les UNESCOs KI-anbefaling (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">💬</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">OpenAI – Bruksretningslinjer</h3>
+                  <span class="resource-badge badge--int">Int.</span>
+                </div>
+                <p>OpenAIs offisielle retningslinjer for akseptabel bruk av ChatGPT og API-ene. Relevant for studenter som bruker ChatGPT i studiene.</p>
+                <a href="https://openai.com/policies/usage-policies" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les OpenAIs bruksretningslinjer (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- AKADEMIA -->
+        <div class="resource-category">
+          <h3><span aria-hidden="true">🎓</span> KI i akademia</h3>
+          <div class="resource-grid">
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🏫</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">USN – KI og akademisk redelighet</h3>
+                  <span class="resource-badge badge--edu">Utdanning</span>
+                </div>
+                <p>Universitetet i Sørøst-Norges ressurser og retningslinjer for studenters bruk av kunstig intelligens i studiearbeid og akademisk skriving.</p>
+                <a href="https://www.usn.no/ki/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Besøk USNs studentressurser (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">🏫</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">Universitetet i Oslo – KI i undervisning</h3>
+                  <span class="resource-badge badge--edu">Utdanning</span>
+                </div>
+                <p>UiOs retningslinjer og ressurser om kunstig intelligens i undervisning og forskning, inkludert veiledning til studenter og ansatte.</p>
+                <a href="https://www.uio.no/tjenester/ki/prinsipper.html" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les UiOs KI-ressurser (åpner i ny fane)">
+                  Les mer ↗
+                </a>
+              </div>
+            </div>
+
+            <div class="resource-card">
+              <div class="resource-icon" aria-hidden="true">📚</div>
+              <div class="resource-info">
+                <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem;">
+                  <h3 style="margin:0;">NTNU – Bruk av KI i studier</h3>
+                  <span class="resource-badge badge--edu">Utdanning</span>
+                </div>
+                <p>NTNUs veiledning om ansvarlig bruk av KI-verktøy i studiearbeid, inkludert retningslinjer for sitering og akademisk integritet.</p>
+                <a href="https://www.ntnu.no/ki/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-dark" aria-label="Les NTNUs KI-veiledning (åpner i ny fane)">
+                  Les Mer ↗
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cta-banner" aria-labelledby="cta-res-heading">
+      <div class="container">
+        <h2 id="cta-res-heading">Har du lest veiledningen?</h2>
+        <p>Gå gjennom sjekklisten vår og se om du er klar til å bruke KI ansvarlig.</p>
+        <div class="cta-actions">
+          <a href="guidelines.html" class="btn btn-outline">Les veiledningen</a>
+          <a href="faq.html#sjekkliste" class="btn btn-outline">Bruk sjekklisten</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo"><span class="logo-icon" aria-hidden="true">📚</span> AIGuidebook</a>
+          <p>Et veiledningsverktøy for universitetsstudenter om ansvarlig og etisk bruk av KI i akademiske sammenhenger.</p>
+          <div class="gdpr-notice" style="margin-top:.75rem;"><span aria-hidden="true">🔒</span> Ingen cookies · Ingen sporing</div>
+        </div>
+        <div class="footer-col">
+          <h4>Sider</h4>
+          <ul role="list">
+            <li><a href="guidelines.html">Veiledning</a></li>
+            <li><a href="examples.html">Eksempler</a></li>
+            <li><a href="faq.html">FAQ &amp; Sjekkliste</a></li>
+            <li><a href="resources.html">Ressurser</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Om</h4>
+          <ul role="list"><li><a href="privacy.html">Personvernerklæring</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 AIGuidebook – Ferdinand Risan &amp; Linus Saxe Huseby</p>
+        <a href="privacy.html">Personvernerklæring</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
